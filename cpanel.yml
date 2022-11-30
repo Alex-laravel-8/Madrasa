@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/public_html/Madrasa
+    - /bin/cp -R images $DEPLOYPATH
