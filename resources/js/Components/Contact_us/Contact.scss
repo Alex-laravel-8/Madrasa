@@ -1,0 +1,29 @@
+.contact-container {
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00A859;
+
+    @media only screen and (max-width: 1200px) {
+        height: 10vh;
+    }
+
+    @media only screen and (max-width: 990px) {
+        height: 8vh;
+    }
+
+    h5 {
+        color: white;
+        font-weight: 400;
+        font-size: var(--main-heading);
+
+        @media only screen and (max-width: 990px) {
+            font-size: 20px;
+        }
+
+        @media only screen and (max-width: 750px) {
+            font-size: 18px;
+        }
+    }
+}

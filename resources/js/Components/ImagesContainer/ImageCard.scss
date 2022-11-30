@@ -1,0 +1,105 @@
+.Image-card-container {
+    .cards {
+        padding: 40px 30px;
+        display: flex;
+        justify-content: center;
+        gap: 2.5rem;
+
+        @media screen and (max-width:1400px) {
+            gap: 2rem;
+        }
+
+        @media screen and (max-width:1200px) {
+            gap: 1.5rem;
+        }
+
+        @media screen and (max-width:990px) {
+            flex-direction: column;
+        }
+        @media screen and (max-width:500px) {
+            padding: 0px 15px;
+
+        }
+
+        .img-card {
+            padding: 35px;
+            max-width: 310px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 20px 2px rgba(0, 0, 0, 0.05);
+
+            border-radius: 20px;
+            display: flex;
+            gap: 1rem;
+            flex-direction: column;
+
+            @media screen and (max-width:1400px) {
+                padding: 25px;
+                gap: 1rem;
+            }
+
+            @media screen and (max-width:1200px) {
+                padding: 20px;
+                gap: 1rem;
+            }
+            @media screen and (max-width:990px) {
+                align-items: center;
+                max-width: 100%;
+
+            }
+            .imgs{
+                height: 55px;
+                width : 55px;
+                @media screen and (max-width:750px) {
+                        height: 40px;
+                        width: 40px;
+                    }
+                    .icon{
+                        fill: #F1B211;
+                    }
+            }
+
+
+            .bio {
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+
+                @media screen and (max-width:1200px) {
+                    gap: .5rem;
+
+                }
+                @media screen and (max-width:990px) {
+                    align-items: center;
+
+
+                }
+
+
+                h5 {
+                    font-weight: 700;
+                    font-size: var(--card-heading);
+                    color: black;
+                    @media screen and (max-width:990px) {
+                        font-size: 18px;
+                    }
+                     @media screen and (max-width:750px) {
+                        font-size: 15px;
+                    }
+
+                }
+
+                span {
+                    font-size: var(--card-para);
+                    color: #5a5555;
+                    font-weight: 400;
+                    text-align: justify;
+                    font-family: 'Crimson Text', serif;
+
+                    @media screen and (max-width:990px) {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

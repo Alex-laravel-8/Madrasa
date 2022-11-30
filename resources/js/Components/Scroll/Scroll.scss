@@ -1,0 +1,29 @@
+.scroll-container {
+    background-color: black;
+
+    @media screen and (max-width: 750px) {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            padding: 30px 20px;
+            color: white;
+            font-size: var(--card-heading);
+
+            @media screen and (max-width: 990px) {
+                font-size: 18px;
+                padding: 20px 15px;
+
+            }
+
+            @media screen and (max-width: 750px) {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.footer-bar {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00A859;
+
+
+    footer {
+        color: white;
+        font-weight: 400;
+        font-size: var(--card-para);
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        display: flex;
+        align-items: center;
+        @media only screen and (max-width: 770px) {
+          gap: .3rem;
+        }
+
+        span {
+            font-size: 16px;
+        }
+
+        @media only screen and (max-width: 770px) {
+            font-size: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        div {
+            height: 17px;
+            width: -2px;
+            color: white;
+            border: 1px solid white;
+            @media only screen and (max-width: 770px) {
+               display: none;
+            }
+
+        }
+
+        p {
+            display: block;
+            margin: 0;
+        }
+    }
+}

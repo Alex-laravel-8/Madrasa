@@ -1,0 +1,29 @@
+import React from 'react'
+import './Subscribe.scss'
+import sub from '../../Assets/subscribe.png'
+import Fade from 'react-reveal/Fade';
+
+import EmailForm from './EmailForm';
+
+const Subscribe = () => {
+    return (
+        <div className='subscribe-container' id='subscribe'>
+            <div className="left-container">
+                <img src={sub} alt="" />
+            </div>
+            <div className="right-container">
+                <div className="flex-sub-sect">
+                    <Fade top>
+                        <h5>Subscribe Us</h5>
+                    </Fade>
+                    <EmailForm />
+                    {/* <input className='input-field' type="text" placeholder='Email:' />
+                    <button className='send-button'>Send</button> */}
+                </div>
+            </div>
+
+        </div>
+    )
+}
+
+export default Subscribe
