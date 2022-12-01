@@ -30,6 +30,43 @@
         <link rel="stylesheet" href="{{asset('static/css/main.a8b70b31.css')}}">
         <script src="{{asset('static/js/main.415b7b25.js')}}"></script>
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <style>
+            * {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root{
+  --main-heading: 30px;
+  --card-heading: 20px;
+  --card-para: 14px;
+
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+a{
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+        </style>
     </head>
     <body class="antialiased">
         <div id="app">

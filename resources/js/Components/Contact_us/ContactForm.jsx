@@ -37,15 +37,15 @@ class ContactForm extends Component {
             email: this.state.email,
             phone: this.state.phone,
         };
-        axios.post('/send', packets)
+        axios.post('/Madrasa/send', packets)
             // .then(
             //     response => alert(JSON.stringify(response.data))
 
             //     )
-            // .catch(error => {
-            //     console.log("ERROR:: ",error.response.data);
+            .catch(error => {
+                console.log("ERROR:: ",error.response.data);
 
-            //     });
+                });
     }
 
     render(){

@@ -25,15 +25,15 @@ class EmailForm extends Component {
         const packets = {
             email: this.state.email,
         };
-        axios.post('/newsletter', packets)
+        axios.post('/Madrasa/newsletter', packets)
             // .then(
             //     response => alert(JSON.stringify(response.data))
 
             //     )
-            // .catch(error => {
-            //     console.log("ERROR:: ",error.response.data);
+            .catch(error => {
+                console.log("ERROR:: ",error.response.data);
 
-            //     });
+                });
     }
 
     render(){
@@ -51,11 +51,10 @@ class EmailForm extends Component {
                               </div>
                            </div> */}
 
-                           <div class="input-div pass">
-                              <div class="div">
-                                   <input type="email" placeholder="Email" onChange={this.takeEmail} class="input" />
+
+                              <div class="div pb-4">
+                                   <input type="email"  className='input-field' placeholder="Email" onChange={this.takeEmail}  />
                            </div>
-                        </div>
                         {/* <div class="input-div pass">
                               <div class="div">
                                    <input type="number" placeholder="Phone Number" onChange={this.takePhone} class="input" />

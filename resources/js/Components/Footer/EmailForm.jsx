@@ -25,15 +25,15 @@ class EmailForm extends Component {
         const packets = {
             email: this.state.email,
         };
-        axios.post('/newsletter', packets)
+        axios.post('/Madrasa/newsletter', packets)
             // .then(
             //     response => alert(JSON.stringify(response.data))
 
             //     )
-            // .catch(error => {
-            //     console.log("ERROR:: ",error.response.data);
+            .catch(error => {
+                console.log("ERROR:: ",error.response.data);
 
-            //     });
+                });
     }
 
     render(){
